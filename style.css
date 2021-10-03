@@ -1,0 +1,550 @@
+/*Halaman About*/
+html {
+	scroll-behavior: smooth;
+}
+body {
+}
+#linkkategori {
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+}
+#linkkategori:hover {
+	font-size: 1.5em;
+	transition: 0.6s;
+}
+.team {
+	padding: 60px 0;
+	background-color: #f1f1f1;
+}
+.section-heading {
+	text-align: center;
+	color: black;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-size: 65px;
+	font-family: "Quicksand", sans-serif;
+	letter-spacing: 5px;
+}
+#hahaha {
+	text-align: center;
+	color: black;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: "Quicksand", sans-serif;
+	letter-spacing: 5px;
+}
+.card {
+	border: none;
+}
+.img-area {
+	display: inline-block;
+	overflow: hidden;
+}
+.team-single:hover .side-duaa {
+	transform: rotateY(0deg);
+	border-radius: 5px;
+}
+.team-single:hover .side-satuu {
+	transform: rotateY(180deg);
+}
+.content-area {
+	transform: perspective(1000px);
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.side-satuu {
+	position: relative;
+	z-index: 2;
+	transform: rotateY(0deg);
+	margin-bottom: 30px;
+}
+.side-duaa {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #b1c3b8;
+	transform: rotateY(-180deg);
+}
+.side-satuu,
+.side-duaa {
+	backface-visibility: hidden;
+	transition: 1s;
+	transform-style: preserve-3d;
+}
+.side-satu .card,
+.side-duaa .card {
+	min-height: 312px;
+}
+.side-duaa .card a {
+	font-size: 18px;
+	color: brown;
+}
+#h4about1 {
+	color: brown;
+	font-family: bignoodletitling;
+	letter-spacing: 5px;
+	font-size: 25px;
+}
+#h4about2 {
+	color: brown;
+	font-family: bignoodletitling;
+	letter-spacing: 5px;
+	font-size: 25px;
+	font-weight: bold;
+}
+p {
+	font-family: merienda;
+}
+footer {
+	background: #f1f1f1;
+	position: absolute;
+	color: #000;
+	width: 100vw;
+}
+/* .social {
+	padding: 0;
+} */
+#h4footer {
+	padding: 15px 0px;
+}
+/* .social li {
+	display: inline-block;
+	background-color: #fff;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	padding: 0cm;
+} */
+/* .social li a i {
+	padding-top: 4px;
+	color: #333;
+	transition: 3s;
+	font-size: 25px;
+}
+.social li a i:hover {
+	color: rgb(30, 118, 226);
+	text-decoration: none;
+} */
+.footer .links ul {
+	list-style-type: none;
+}
+.footer .links li a {
+	color: #000;
+	transition: 0.2s;
+}
+.footer .links li a:hover {
+	text-decoration: none;
+	color: rgb(30, 118, 226);
+}
+.footer .lokasi i {
+	font-size: 18px;
+}
+.footer .copyright p {
+	font-size: 1.3rem;
+}
+#h3lokasi {
+	text-transform: uppercase;
+	font-size: 65px;
+	font-family: "Quicksand", sans-serif;
+	letter-spacing: 5px;
+}
+.jumbotron {
+	background: url(img/c4.jpg);
+	background-size: cover;
+	/* height: 600px; */
+	height: 100vh;
+	text-align: center;
+}
+.jumbotron .container h1 {
+	color: #fff;
+}
+/*Halaman About*/
+/*Halaman Home*/
+.carousel-item {
+	/* height: 100vh; */
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	background-size: cover;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 60px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-weight: 900;
+}
+.carousel-caption p {
+	font-size: 18px;
+	margin: auto;
+	width: 60%;
+	line-height: 1.9;
+}
+.carousel-caption a {
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+}
+header .logo {
+	font-family: "Yusei Magic", sans-serif;
+	position: relative;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+header ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li {
+	position: relative;
+	list-style: none;
+	margin-top: 10px;
+}
+header ul li a {
+	font-family: "Yusei Magic", sans-serif;
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 600px;
+	transition: 0.6s;
+}
+header ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5em;
+}
+header.sticky {
+	padding: 5px 100px;
+	background: #fff;
+}
+header.sticky .logo,
+header.sticky ul li a {
+	color: #000;
+	font-family: "Yusei Magic", sans-serif;
+}
+header.sticky .logo,
+header.sticky ul li a:hover {
+	text-decoration: none;
+}
+#h2k,
+#h5k {
+	font-family: "Quicksand", sans-serif;
+}
+/*.card{
+	transition: 0.7s;
+}
+.card:hover{
+	transform:scale(1.1);
+	 box-shadow: 1px 1px 1px #000;
+	 z-index: 2;
+}*/
+.container hr {
+	border-color: #b1c3b8;
+	width: 90px;
+	border-width: 3px;
+}
+#name,
+#seddis {
+	font-family: "Quicksand", sans-serif;
+}
+.overlay {
+	display: block;
+	opacity: 0;
+	position: absolute;
+	top: 10%;
+	margin-left: 0;
+	width: 70px;
+}
+.product-top:hover .overlay {
+	opacity: 1;
+	margin-left: 5%;
+	transition: 0.5s;
+}
+.overlay .fa {
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+	height: 35px;
+	width: 35px;
+	font-size: 20px;
+	padding: 7px;
+	margin: 5%;
+	margin-bottom: 5%;
+}
+.overlay .btn-secondary {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/*Halaman Home*/
+
+/* custom style */
+body {
+	overflow-x: hidden;
+}
+
+nav.navbar {
+	transition: 300ms;
+}
+
+.navbar .navbar-brand {
+	font-size: 2rem;
+	color: #fff;
+	font-family: "Yusei Magic", sans-serif;
+}
+
+/* .navbar .navbar-brand img {
+	width: 50px;
+} */
+
+.navbar .navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+	color: #fff;
+	font-family: "Yusei Magic", sans-serif;
+	transition: 300ms;
+}
+
+nav.navbar-on-scroll {
+	background: #fff;
+}
+
+nav.navbar-on-scroll .navbar-brand,
+nav.navbar-on-scroll .navbar-nav .nav-link {
+	color: #000;
+	transition: 300ms;
+}
+
+nav.navbar-on-scroll .navbar-brand:hover {
+	color: #000;
+}
+
+nav.navbar-on-scroll.navbar .navbar-nav .nav-link:hover {
+	color: #000 !important;
+}
+
+img.card-img-top {
+	object-fit: cover;
+}
+
+.carousel .carousel-item img {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover !important;
+}
+
+.jumbotron {
+	background-attachment: fixed;
+	border-radius: 0;
+}
+
+p#copyright {
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.footer ul.social {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+}
+
+.footer ul.social li {
+	background: rgb(184, 184, 184);
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: 300ms;
+}
+
+.footer ul.social li:nth-child(2) {
+	margin: 0 0.5rem;
+}
+
+.footer ul.social li:hover {
+	transform: scale(1.1);
+}
+
+.footer ul.social li a i {
+	color: #fff;
+}
+
+.footer h4 {
+	font-size: 1rem;
+}
+
+.patner-kami {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-items: center;
+	align-items: center;
+	margin: 2rem 0;
+}
+
+.patner-kami img {
+	width: 100px;
+}
+
+.product-top img {
+	object-fit: cover;
+}
+
+.product-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.product-bottom h3 {
+	font-size: 1rem;
+}
+
+.product-bottom h5 {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.team-single .card {
+	background: #eaeaea !important;
+}
+
+.team-single .card .card-body .img-area img {
+	object-fit: cover;
+}
+
+.team-single .card .card-body h4 {
+	color: #333 !important;
+}
+
+.team-single .card .card-body h4 {
+	color: #333 !important;
+	letter-spacing: 0 !important;
+	font-size: 1rem !important;
+	margin-top: 1.5rem;
+}
+
+.team-single .card .card-body p {
+	font-size: 0.8rem;
+}
+
+.side-duaa p {
+	text-align: left;
+}
+
+.side-duaa i {
+	color: #333;
+}
+
+.side-satuu .img-area img {
+	width: 100%;
+	object-fit: fill;
+}
+
+.side-satuu .img-area {
+	width: 100% !important;
+}
+
+.card-body.text-center {
+	padding: 0;
+}
+
+.side-duaa p {
+	text-align: left;
+	padding: 0 1rem;
+}
+
+.team-single {
+	cursor: pointer;
+}
+
+/* desktop device */
+@media (min-width: 1199.98px) {
+	.navbar .navbar-nav .nav-link:hover {
+		color: #fff;
+		transform: scale(1.1);
+	}
+}
+
+/* mobile device */
+@media (max-width: 575.98px) {
+	nav.navbar {
+		background: #fff;
+	}
+
+	nav.navbar button:focus {
+		outline: none !important;
+	}
+
+	nav.navbar .navbar-brand {
+		color: #000;
+	}
+
+	nav.navbar .navbar-brand:hover {
+		color: #000;
+	}
+
+	nav.navbar .navbar-nav .nav-link {
+		color: #000;
+	}
+
+	.patner-kami {
+		grid-template-columns: 1fr;
+	}
+
+	.product-top img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	.product-bottom {
+		margin-bottom: 2.5rem;
+	}
+
+	h3#h3lokasi,
+	h3.section-heading {
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	h3.section-heading,
+	h4#hahaha {
+		margin-bottom: 0.5rem;
+	}
+
+	h4#hahaha {
+		font-size: 0.8rem;
+	}
+}
